@@ -1,6 +1,10 @@
 .topnav {
     overflow: hidden;
     background-color: #85586F;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
   }
   
   .topnav a {

@@ -1,0 +1,21 @@
+/* gallery */
+
+.section-gallery .gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  
+  .section-gallery .gallery img:first-child {
+    grid-row: 1/3;
+    grid-column: 1/3;
+  }
+  
+  .section-gallery .gallery img:nth-child(2) {
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+  
+  .section-gallery .gallery img {
+    width: 100%;
+    height: 100%;
+  }
