@@ -9,7 +9,7 @@ const NavBar = () => {
             <a href="/#services">Services</a>
             <a href="/#contact">Contact Us</a>
             <div className="topnav-right">
-                <a href="/register">Sign Up</a>
+                <a href="/register">Sign In</a>
             </div>
         </div>
 
