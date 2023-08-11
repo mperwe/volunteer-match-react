@@ -7,14 +7,14 @@ const About = () => {
         <div className="overlay">
           <div className="section-large-text-inner">
             <h2>Let's Connect</h2>
+            
             <h3>Our Mission</h3>
-            <p>
+            
             To bridge the gap between passionate volunteers and organizations in need. We understand the transformative power of volunteering, both for individuals looking to make a positive impact and for organizations seeking dedicated support.
-            </p>
+           
             <h3>Our Vision</h3>
-            <p>
             To create a world where volunteering is not just an act of service but an ingrained part of our collective consciousness.
-            </p>
+          
           </div>
         </div>
       </section>  

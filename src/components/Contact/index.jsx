@@ -39,12 +39,13 @@ const Contact = () => {
                     <div className="contacts contact-wrapper">
 
                         <ul>
-                            <li>We've driven online revenues of over <span className="highlight-text-grey">$2
-                                billion</span> for our clients. Ready to know
+                            <li>We've have connected volunteers with nonprofits, driving community impact. <span className="highlight-text-grey">
+                                Making a difference.</span>  Ready to know
                                 how we can help you?</li>
                             <span className="hightlight-contact-info">
-                                <li className="email-info"><i className="fa fa-envelope" aria-hidden="true"></i> info@demo.com</li>
-                                <li><i className="fa fa-phone" aria-hidden="true"></i> <span className="highlight-text">+91 11 1111 2900</span></li>
+                                <li className="email-info"><i className="fa fa-envelope" aria-hidden="true"></i> info@volunteermatch.org</li>
+                                <li><i className="fa fa-phone" aria-hidden="true"></i> <span className="highlight-text">+256 759 555 517</span></li>
+                                <li><i className="fa fa-phone" aria-hidden="true"></i> <span className="highlight-text">+256 771 283 054</span></li>
                             </span>
                         </ul>
                     </div>

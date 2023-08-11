@@ -11,7 +11,7 @@ const Service = () =>{
           <img src="services4.jpg" alt="" className="big" />
           <img src="services7.jpg" alt="" className="big" />
           <img src="services8.jpg" alt="" className="big" />
-          
+                              
         </div>
       </section>
   

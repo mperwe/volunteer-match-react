@@ -16,23 +16,24 @@ const Footer = () => {
             <a href="http://youtube.com">
               <i className="fab fa-youtube fa-2x"></i>
             </a>
-          </div>
+            <a href="http://twitter.com">
+              <i className="fab fa-twitter fa-2x"></i>
+            </a>
+
+            </div>
           <div>
             <h3>Company Info</h3>
             <ul>
-              <li><a href="#">All Products</a></li>
-              <li><a href="#">About Us</a></li>
+              <li><a href="#about">About Us</a></li>
               <li><a href="#">Privacy Policy</a></li>
               <li><a href="#">Terms of Service</a></li>
             </ul>
           </div>
           <div>
-            <h3>Blog Posts</h3>
+            <h3>Our Services</h3>
             <ul>
-              <li><a href="#">Post 1.</a></li>
-              <li><a href="#">Post 2.</a></li>
-              <li><a href="#">Post 3.</a></li>
-              <li><a href="#">Post 3.</a></li>
+              <li><a href="#">What we do</a></li>
+             
             </ul>
           </div>
           <div>
@@ -45,7 +46,7 @@ const Footer = () => {
                     type="email"
                     name="email"
                     id="email"
-                    size="40"
+                    size="100"
                     className="form-control"
                     placeholder="E-mail" /></span><button type="submit" value="Submit" className="form-control submit">
                   <i className="fas fa-chevron-right"></i>
