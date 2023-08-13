@@ -6,11 +6,10 @@ import VolunteerForm from "./components/VolunteerForm"
 import Contact from "./components/Contact"
 import Register from "./components/Register"
 import NotFound from "./components/NotFound"
-import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Router>
         <Routes>
           <Route exact path="/" element={<Home />} />
