@@ -6,7 +6,7 @@ const Footer = () => {
         <footer className="section-footer">
         <div className="container">
           <div>
-            <h2>Follow US.</h2>
+            <h2>Follow Us.</h2>
             <a href="http://instagram.com">
               <i className="fab fa-instagram fa-2x"></i>
             </a>
@@ -32,27 +32,12 @@ const Footer = () => {
           <div>
             <h3>Our Services</h3>
             <ul>
-              <li><a href="#">What we do</a></li>
-             
+              <li><a href="#services">What we do</a></li>
             </ul>
           </div>
-          <div>
+          <div className="footer-register">
             <h3>Sign Up</h3>
-            <p>Join our Volunteer matching Platform.</p>
-            <form name="email-form" onsubmit="event.preventDefault()">
-              <div className="email-form">
-                <span className="form-control-wrap"
-                  ><input
-                    type="email"
-                    name="email"
-                    id="email"
-                    size="100"
-                    className="form-control"
-                    placeholder="E-mail" /></span><button type="submit" value="Submit" className="form-control submit">
-                  <i className="fas fa-chevron-right"></i>
-                </button>
-              </div>
-            </form>
+            <a href="/register/organization">Join our Volunteer matching Platform.</a>
           </div>
         </div>
       </footer>
