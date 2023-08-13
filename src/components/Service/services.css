@@ -1,5 +1,9 @@
 /* gallery */
 
+.section-gallery {
+  height: 650px;
+}
+
 .section-gallery .gallery {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -20,6 +24,21 @@
     height: 100%;
   }
 
+  .section-gallery .services-header {
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 3rem 0;
+  }
+
+  .section-gallery .services-header h2 {
+    font-size: 3rem;
+  }
+
+  
+  .section-gallery .services-header p {
+    font-size: 24px;
+  }
 @media(max-width: 768px){ 
   .section-gallery .gallery {
     display: grid;

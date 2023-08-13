@@ -10,7 +10,7 @@ const Hero = () => {
                     <p>Volunteering made Simple, Change made possible.</p>
                     <p>Our platform serves as a digital meeting place, connecting enthusiastic volunteers with various non-profit organizations and community initiatives.
                     </p>
-                    <a href="#about" className="btn">Get Started</a>
+                    <a href="/register/organization" className="btn">Get Started</a>
                 </div>
                 <img src="volunteerlogo.jpg" alt="volunteer logo" />
             </div>

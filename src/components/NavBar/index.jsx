@@ -4,12 +4,13 @@ import "./navbar.css";
 const NavBar = () => {
     return (
         <div className="topnav">
-            <a className="active" href="/">Home</a>
-            <a href="/#about">About</a>
-            <a href="/#services">Services</a>
-            <a href="/#contact">Contact Us</a>
+            <a className="active" href="/">HOME</a>
+            <a href="/#about">ABOUT</a>
+            <a href="/#services">SERVICES</a>
+            <a href="/#contact">CONTACT US</a>
             <div className="topnav-right">
-                <a href="/register">Sign In</a>
+                <a href="/register/organization">ORGANISATION SIGN UP</a>
+                <a href="/register/volunteer">VOLUNTEER SIGN UP</a>
             </div>
         </div>
 

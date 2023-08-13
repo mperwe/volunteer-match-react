@@ -1,9 +1,9 @@
 import React from "react";
 import NavBar from "../NavBar";
 import Footer from "../Footer"
-import "./register.css"
+import "./volunteerform.css" 
 
-const Register = () => {
+const VolunteerForm = () => {
     return (
         <>
             <NavBar />
@@ -27,11 +27,11 @@ const Register = () => {
                                 <form className="section-login-2-form">
                                     <div className="login-form-1">
                                         <label for="input-email">Email</label>
-                                        <input type="text" id="input-email" placeholder="org@example.com" required />
+                                        <input type="text" id="input-email" placeholder="frank@example.com" required />
                                     </div>
                                     <div className="login-form-2">
-                                        <label for="input-name">Organisation Name</label>
-                                        <input type="text" id="input-name" placeholder="Company Name" required />
+                                        <label for="input-name">Full Name</label>
+                                        <input type="text" id="input-name" placeholder="Kanzu Code" required />
                                     </div>
                                     <div className="login-form-3">
                                         <label for="input-password">Password</label>
@@ -56,9 +56,7 @@ const Register = () => {
             </main>
             <Footer/>
         </>
-
-
     )
 }
 
-export default Register;
+export default VolunteerForm;
