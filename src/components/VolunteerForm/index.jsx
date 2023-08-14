@@ -7,51 +7,38 @@ const VolunteerForm = () => {
     return (
         <>
             <NavBar />
-            <section className="section-login">
-                <div className="section-main">
-                    <div className="section-login-1">
-                        <div className="section-login-1-main">
-                            <h1 className="section-login-1-title">Voluteer Link</h1>
-                            <p className="section-login-1-text">Life-changing moments start here.</p>
-                            <div className="section-login-1-img">
-                                <img src="signup2.jpg" alt="" />
-                            </div>
-
-                        </div>
-                    </div>
-                    <div className="section-login-2">
-                        <div className="section-login-2-main">
-
-                            <h1 className="section-login-2-title">Sign Up</h1>
-                            <form className="section-login-2-form">
-                                <div className="login-form-1">
-                                    <label for="input-email">Email</label>
-                                    <input type="text" id="input-email" placeholder="frank@example.com" required />
-                                </div>
-                                <div className="login-form-2">
-                                    <label for="input-name">Full Name</label>
-                                    <input type="text" id="input-name" placeholder="Kanzu Code" required />
-                                </div>
-                                <div className="login-form-3">
-                                    <label for="input-password">Password</label>
-                                    <input type="password" id="input-password" placeholder="At least 8 characters" required />
-                                </div>
-                                <div className="login-form-4">
-                                    <input type="checkbox" id="input-checkbox" />
-                                    <p>By creating an account, you agree to the <a href="/terms-and-conditions">Terms & Conditions.</a></p>
-                                </div>
-                                <div className="login-form-submit-btn">
-                                    <button>Create an Account</button>
-                                </div>
-                                <div className="login-form-5">
-                                    <p>Already have an account? <a href="/signin">Sign In</a></p>
-                                </div>
-                            </form>
-
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <div class="organizationContainerWrapper">
+    <div class="rightContainer">
+      <div class="signUpContainer">
+        <h3>Create Volunteer Account</h3>
+        <div class="inputBox">
+        <input type="text" placeholder="Full Name" />
+        </div>
+        <div class="inputBox">
+        <input type="text" placeholder="Contact Number" />
+        </div>
+        <div class="inputBox">
+          <input type="text" placeholder="Email address" />
+        </div>
+        <div class="inputBox">
+          <input type="text" placeholder="Password" />
+        </div>
+        <div class="inputBox">
+          <input type="text" placeholder="Re Enter Password" />
+        </div>
+        <div class="agreeCheckbox">
+          <input type="checkbox" />
+          <p>I agree with <a>Terms</a> and <a>Privacy</a></p>
+        </div>
+        <div class="buttonContainer">
+          <button type="button" class="signUpButton orgbutton">
+            SIGN UP
+          </button>
+        </div>
+        <p className="accountExists">Already have an account? <a href="#">Log In</a></p>
+      </div>
+    </div>
+  </div>
             <Footer/>
         </>
     )
