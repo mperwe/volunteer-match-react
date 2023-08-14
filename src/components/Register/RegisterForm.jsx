@@ -20,10 +20,8 @@ const RegisterForm = ({title, type}) => {
             confirmPassword,
             checkbox,
         }
-
+        localStorage.setItem("users", JSON.stringify(newUser))
         
-
-        console.log("newUser", newUser)
 
 
     }
