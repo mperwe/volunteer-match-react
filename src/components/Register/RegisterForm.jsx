@@ -40,7 +40,7 @@ const RegisterForm = ({title, type}) => {
                                 SIGN UP
                             </button>
                         </div>
-                        <p className="accountExists">Already have an account? <a href="#">Log In</a></p>
+                        <p className="accountExists">Already have an account? <a href="/login">Log In</a></p>
                     </div>
                 </div>
             </div>

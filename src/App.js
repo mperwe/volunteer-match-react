@@ -5,6 +5,7 @@ import Home from "./components/Home"
 import VolunteerForm from "./components/VolunteerForm"
 import Contact from "./components/Contact"
 import Register from "./components/Register"
+import Login from "./components/Login"
 import NotFound from "./components/NotFound"
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route exact path="/contact" element={<Contact />} />
           <Route exact path="/register/organization" element={<Register />} />
           <Route exact path="/register/volunteer" element={<VolunteerForm />} />
+          <Route exact path="/login" element={<Login />} />
           <Route exact path="*" element={<NotFound />} />
         </Routes>
       </Router>

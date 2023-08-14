@@ -11,8 +11,6 @@ const Register = () => {
             <RegisterForm title="Create Organisation Account" type="organisation" />
             <Footer />
         </>
-
-
     )
 }
 
