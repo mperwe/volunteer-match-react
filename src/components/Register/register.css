@@ -65,11 +65,16 @@
   background-image: none;
   background-color: transparent;
   box-shadow: none;
+  width: 100%;
+}
+
+.inputBox > input:focus {
+  outline: 0;
 }
 
 .inputBox > input::placeholder {
   font-weight: 400;
-  font-size: 11px;
+  font-size: 14px;
   line-height: 19px;
   color: rgba(0, 0, 0, 0.5);
 }
@@ -91,6 +96,7 @@
 
 .agreeCheckbox > p {
   color: rgba(0, 0, 0, 0.5);
+  font-size: 17px;
 }
 
 .accountExists {
@@ -129,7 +135,7 @@
 .signUpContainer > p {
   color: rgba(0, 0, 0, 0.5);
   font-weight: 500;
-  font-size: 17.7396px;
+  font-size: 17px;
   line-height: 28px;
   text-align: center;
 }
