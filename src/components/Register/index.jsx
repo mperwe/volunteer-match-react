@@ -8,7 +8,7 @@ const Register = () => {
     return (
         <>
             <NavBar />
-            <RegisterForm />
+            <RegisterForm title="Create Organisation Account" type="organisation" />
             <Footer />
         </>
 

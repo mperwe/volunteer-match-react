@@ -1,6 +1,6 @@
 import React from 'react'
 
-const RegisterForm = () => {
+const RegisterForm = ({title, type}) => {
     const handleRegister = () => {
         console.log("click")
     }
@@ -10,10 +10,15 @@ const RegisterForm = () => {
             <div className="organizationContainerWrapper">
                 <div className="rightContainer">
                     <div className="signUpContainer">
-                        <h3>Create Organization Account</h3>
+                        <h3>{title}</h3>
+                        {type ==="organisation" ?
                         <div className="inputBox">
                             <input type="text" placeholder="Organisation Name" required />
+                        </div>:
+                        <div className="inputBox">
+                            <input type="text" placeholder="Full Name" required />
                         </div>
+                        }
                         <div className="inputBox">
                             <input type="text" placeholder="Contact Number" required />
                         </div>
