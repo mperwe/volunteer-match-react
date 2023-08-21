@@ -23,7 +23,6 @@ const RegisterForm = ({title, type}) => {
         localStorage.setItem("users", JSON.stringify(newUser))
         
 
-
     }
 
     return (

@@ -1,4 +1,5 @@
 import React from 'react'
+import {useEffect, useState} from 'react';
 
 const LoginForm = ({title, type}) => {
     const handleLogin = () => {
@@ -29,6 +30,25 @@ const LoginForm = ({title, type}) => {
 
         </form>
     )
+}
+
+
+function App(){
+    const[organisation, setOrganisation] = useState([])
+  let apiUrl = "http://localhost:1337/api/organisations?populate=*"
+
+  useEffect(()=>{
+    fetch(apiUrl)
+    .then((Response)=>{
+      return Response.json()
+    })
+    .then((data)=>{
+      setOrganisation(data.data)
+    })
+    .catch((error)=>{
+      console.log(error)
+    })
+  })
 }
 
 export default LoginForm;
