@@ -1,18 +1,26 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+
 
 const RegisterForm = ({title, type}) => {
-    const [organisationName, setOrganisationName] = useState()
-    const [volunteerName, setVolunteerName] = useState()
-    const [contactNumber, setContactNumber] = useState()
-    const [email, setEmail] = useState()
-    const [password, setPasswordName] = useState()
-    const [confirmPassword, setConfirmPassword] = useState()
-    const [checkbox, setCheckbox] = useState()
+    const [organisationName, setOrganisationName] = useState("")
+    const [volunteerName, setVolunteerName] = useState("")
+    const [contactNumber, setContactNumber] = useState("")
+    const [email, setEmail] = useState("")
+    const [password, setPasswordName] = useState("")
+    const [confirmPassword, setConfirmPassword] = useState("")
+    const [checkbox, setCheckbox] = useState("")
+    const registerOrgUrl = "http://localhost:1337/api/organisation-accounts"
+    const [successMessage, setSuccessMessage] =useState("")
+    const navigateHomepage = useNavigate()
+    
+
+
 
 
     const handleRegister = (event) => {
         event.preventDefault()
-        const newUser = {
+        /*const newUser = {
             name: volunteerName ? volunteerName : organisationName,
             contactNumber,
             email,
@@ -20,9 +28,31 @@ const RegisterForm = ({title, type}) => {
             confirmPassword,
             checkbox,
         }
-        localStorage.setItem("users", JSON.stringify(newUser))
+        localStorage.setItem("users", JSON.stringify(newUser))*/
         
+        fetch(registerOrgUrl,{
+            method:"POST",
+            headers:{
+                "content-type":"application/json"
+            },
+            body:JSON.stringify({
+                "data":{
+                    organisation_name:organisationName,
+                    contact_number:contactNumber,
+                    email_address:email,
+                    password:password,
 
+                }
+            })
+        }).then(response => {
+            response.json()
+                if(response.ok){
+                    setSuccessMessage("You successfully created an Account");
+                    navigateHomepage("/")
+                }
+            })
+        
+        
 
     }
 
@@ -61,6 +91,7 @@ const RegisterForm = ({title, type}) => {
                                 SIGN UP
                             </button>
                         </div>
+                        <p className="success">{successMessage}</p>
                         <p className="accountExists">Already have an account? <a href="/login">Log In</a></p>
                     </div>
                 </div>
