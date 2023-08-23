@@ -45,7 +45,7 @@ div.contact-form-container {
 
 ::-webkit-input-placeholder {
     /* Chrome */
-    font-family: 'Roboto', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 @media (min-width: 600px) {

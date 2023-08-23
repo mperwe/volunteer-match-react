@@ -6,169 +6,172 @@ import "./dashboard.css"
 
 const Dashboard = () => {
   return (
-      <>
-          <NavBar />
-       
-          
-
-  <header class="dash_header">
-    <div class="logo">
-      <a href="#">Volunteer Link</a>
-      <div class="search_box">
-        <input type="text" placeholder="Search Opportunities" />
-        <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
-      </div>
-    </div>
-
-    <div className="header-icons">
-      <i className="fas fa-bell"></i>
-      <div className="account">
-        <img src="frank.jpg" alt="frank Image" />
-        <h4>Frank</h4>
-      </div>
-    </div>
-  </header>
-  <div className="dashboard_container">
-    <nav>
-      <div className="side_navbar">
-        <a href="#" className="active">Dashboard</a>
-        <a href="#">Profile</a>
-        <a href="#">History</a>
-        <a href="#">Application</a>
-        <a href="#">My Account</a>
-        <a href="#">Documnets</a>
-
-      </div>
-    </nav>
-
-    <div className="main-body">
-      <h2>Dashboard</h2>
-      <div className="promo_card">
-        <h1>Welcome to Voluteer Link</h1>
-        <span>Our Matching Platform</span>
-        <button>Learn More</button>
-      </div>
-
-      <div className="history_lists">
-        <div className="list1">
-          <div className="row">
-            <h4>Volunteer Opportunities Available</h4>
-            <a href="#">See all</a>
+    <div className="dashboard">
+      <NavBar />
+      <header className="dash_header">
+        <div className="logo">
+          <a href="#">Volunteer Link</a>
+          <div className="search_box">
+            <input type="text" placeholder="Search Opportunities" />
+            <i className="fas fa-search"></i>
           </div>
-          <table>
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Dates</th>
-                <th>Name</th>
-                <th>Type</th>
-                <th>Apply</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>2, Aug, 2023</td>
-                <td>UNESCO</td>
-                <td>NGO</td>
-                <td> Apply</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>22, Aug, 2023</td>
-                
-                <td>URA</td>
-                <td>Government</td>
-                <td>Apply</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>2, Sep, 2023</td>
-              
-                <td>UNICEF</td>
-                <td>NGO</td>
-                <td>Apply</td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td>1, Dec, 2023</td>
-                <td>SANLAM</td>
-                <td>Private</td>
-                <td>Apply</td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td>11, Dec, 2023</td>
-                <td>Twezimbe HQ</td>
-                <td>NGO</td>
-                <td>Apply</td>
-              </tr>
-              <tr>
-                <td>6</td>
-                <td>2, Jan, 2024</td>
-                <td>UMEME</td>
-                <td>Government</td>
-                <td>Apply</td>
-              </tr>
-            </tbody>
-          </table>
         </div>
 
-     
+        <div className="header-icons">
+          <i className="fas fa-bell"></i>
+          <div className="account">
+            <img src="frank.jpg" alt="frank Image" />
+            <h4>Frank</h4>
+          </div>
+        </div>
+      </header>
+      <div className="dashboard_container">
+        <nav>
+          <div className="side_navbar">
+            <a href="#" className="active">Dashboard</a>
+            <a href="#">Profile</a>
+            <a href="#">Applications</a>
+            <a href="#">My Account</a>
+          </div>
+        </nav>
+
+        <div className="main-body">
+          <div className="dashboard_hero">
+            <h1>Welcome to Volunteer Link</h1>
+            <span>Our Matching Platform</span>
+          </div>
+          <div className="opportunities_list">
+            <div className="opportunities_table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Date Added</th>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>23.Aug.2023</td>
+                    <td>UNESCO</td>
+                    <td>NGO</td>
+                    <td className="table_actions"> 
+                    <span className="table_icon"><i className="fas fa-eye"></i></span>
+                    <span className="table_icon"><i className="fas fa-edit"></i></span>
+                    <span className="table_icon"><i className="fas fa-trash-alt"></i></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>22.Aug.2023</td>
+
+                    <td>URA</td>
+                    <td>Government</td>
+                    <td className="table_actions">
+                    <span className="table_icon"><i className="fas fa-eye"></i></span>
+                    <span className="table_icon"><i className="fas fa-edit"></i></span>
+                    <span className="table_icon"><i className="fas fa-trash-alt"></i></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>21.Aug.2023</td>
+                    <td>UNICEF</td>
+                    <td>NGO</td>
+                    <td className="table_actions">
+                    <span className="table_icon"><i className="fas fa-eye"></i></span>
+                    <span className="table_icon"><i className="fas fa-edit"></i></span>
+                    <span className="table_icon"><i className="fas fa-trash-alt"></i></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>15.Aug.2023</td>
+                    <td>SANLAM</td>
+                    <td>Community</td>
+                    <td className="table_actions">
+                    <span className="table_icon"><i className="fas fa-eye"></i></span>
+                    <span className="table_icon"><i className="fas fa-edit"></i></span>
+                    <span className="table_icon"><i className="fas fa-trash-alt"></i></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>10.Aug.2023</td>
+                    <td>Twezimbe HQ</td>
+                    <td>NGO</td>
+                    <td className="table_actions">
+                    <span className="table_icon"><i className="fas fa-eye"></i></span>
+                    <span className="table_icon"><i className="fas fa-edit"></i></span>
+                    <span className="table_icon"><i className="fas fa-trash-alt"></i></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>31.July.2023</td>
+                    <td>UMEME</td>
+                    <td>Government</td>
+                    <td className="table_actions">
+                    <span className="table_icon"><i className="fas fa-eye"></i></span>
+                    <span className="table_icon"><i className="fas fa-edit"></i></span>
+                    <span className="table_icon"><i className="fas fa-trash-alt"></i></span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div className="dashboard_sidebar">
+          <h4>Categories</h4>
+          <div className="dashboard_category">
+            <span><i className="fas fa-medkit"></i></span>
+            <div className="info">
+              <h5>Health</h5>
+            </div>
+          </div>
+
+          <div class="dashboard_category">
+            <i class="fas fa-church"></i>
+            <div class="info">
+              <h5>Religion</h5>
+            </div>
+          </div>
+
+          <div class="dashboard_category">
+            <i class="fas fa-school"></i>
+            <div class="info">
+              <h5>Education</h5>
+            </div>
+          </div>
+
+          <div class="dashboard_category">
+            <i class="fas fa-building"></i>
+            <div class="info">
+              <h5>NGOs</h5>
+            </div>
+          </div>
+
+          <div class="dashboard_category">
+            <i class="fas fa-people-carry"></i>
+            <div class="info">
+              <h5>Community</h5>
+            </div>
+          </div>
+          <div class="dashboard_category">
+            <i class="fas fa-users"></i>
+            <div class="info">
+              <h5>Government</h5>
+            </div>
+          </div>
+        </div>
       </div>
+      <Footer />
     </div>
-
-    <div className="dashboard_sidebar">
-      <h4>Account Balance</h4>
-      
-      <div className="balance">
-        <i className="fas fa-dollar icon"></i>
-        <div className="info">
-          <h5>Dollar</h5>
-          <span><i className="fas fa-dollar"></i>25,000.00</span>
-        </div>
-      </div>
-      
-      <div className="balance">
-        <i class="fa-solid fa-rupee-sign icon"></i>
-        <div class="info">
-          <h5>PKR</h5>
-          <span><i class="fa-solid fa-rupee-sign"></i>300,000.00</span>
-        </div>
-      </div>
-
-      <div class="balance">
-        <i class="fas fa-euro icon"></i>
-        <div class="info">
-          <h5>Euro</h5>
-          <span><i class="fas fa-euro"></i>25,000.00</span>
-        </div>
-      </div>
-
-      <div class="balance">
-        <i class="fa-solid fa-indian-rupee-sign icon"></i>
-        <div class="info">
-          <h5>INR</h5>
-          <span><i class="fa-solid fa-indian-rupee-sign"></i>220,000.00</span>
-        </div>
-      </div>
-
-      <div class="balance">
-        <i class="fa-solid fa-sterling-sign icon"></i>
-        <div class="info">
-          <h5>Pound</h5>
-          <span><i class="fa-solid fa-sterling-sign"></i>30,000.00</span>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-
-
-
-          <Footer />
-      </>
   )
 }
 export default Dashboard;

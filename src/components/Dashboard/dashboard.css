@@ -1,15 +1,7 @@
 /*  import google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-*{
-  margin: 0;
-  padding: 0;
-  border: none;
-  outline: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-body{
+
+.dashboard{
   background: rgb(219, 219, 219);
 }
 .dash_header{
@@ -42,7 +34,7 @@ body{
   border-bottom-left-radius: 5px;
 }
 .search_box i{
-  padding: 0.66rem;
+  padding: 10px;
   cursor: pointer;
   color: #fff;
   background: #000;
@@ -73,17 +65,15 @@ body{
   margin-top: 10px;
   display: flex;
   justify-content: space-between;
+  height: 600px;
 }
 
 /* Side menubar section */
 nav{
-    width: 15%;
-
+  width: 15%;
   background: #fff;
 }
 .side_navbar{
-    width: 15%;
-
   padding: 1px;
   display: flex;
   flex-direction: column;
@@ -118,41 +108,48 @@ nav{
 /* Main Body Section */
 .main-body{
   width: 70%;
-  padding: 1rem;
+  padding: 0 1rem 1rem 1rem;
 }
-.promo_card{
+.dashboard_hero{
   width: 100%;
   color: #fff;
-  margin-top: 10px;
   border-radius: 8px;
   padding: 0.5rem 1rem 1rem 3rem;
-  background: rgb(37, 37, 37);
+  background-color: rgb(133, 88, 111);
 }
-.promo_card h1, .promo_card span, button{
+.dashboard_hero h1, .dashboard_hero span, button{
   margin: 10px;
 }
-.promo_card button{
+.dashboard_hero button{
   display: block;
   padding: 6px 12px;
   border-radius: 5px;
   cursor: pointer;
 }
-.history_lists{
+.opportunities_list{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 10px;
 }
+.opportunities_table {
+    width: 100%;
+}
+
 .row{
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 1rem 0;
 }
+
 table{
   background: #fff;
   padding: 1rem;
   text-align: left;
   border-radius: 10px;
+  height: 450px;
+  width: 100%;
 }
 table td, th{
   padding: 0.2rem 0.8rem;
@@ -165,7 +162,9 @@ table td{
   color: rgb(100, 100, 100);
 }
 
-
+.table_icon {
+    padding: 5px;
+}
 
 /* Sidebar Section */
 .dashboard_sidebar{
@@ -176,12 +175,13 @@ table td{
 .dashboard_sidebar h4{
   margin-bottom: 1.5rem;
 }
-.dashboard_sidebar .balance{
+.dashboard_sidebar .dashboard_category{
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
+  gap: 8px;
 }
-.balance .icon{
+.dashboard_category .icon{
   color: #fff;
   font-size: 20px;
   border-radius: 6px;
@@ -189,13 +189,13 @@ table td{
   padding: 1rem;
   background: rgb(37, 37, 37);
 }
-.balance .info h5{
+.dashboard_category .info h5{
   font-size: 16px;
 }
-.balance .info span{
+.dashboard_category .info span{
   font-size: 14px;
   color: rgb(100, 100, 100);
 }
-.balance .info i{
+.dashboard_category .info i{
   margin-right: 2px;
 }
