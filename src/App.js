@@ -7,6 +7,7 @@ import Contact from "./components/Contact"
 import Register from "./components/Register"
 import Login from "./components/Login"
 import NotFound from "./components/NotFound"
+import Dashboard from "./components/Dashboard"
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/contact" element={<Contact />} />
+          <Route exact path="/dashboard" element={<Dashboard />} />
           <Route exact path="/register/organization" element={<Register />} />
           <Route exact path="/register/volunteer" element={<VolunteerForm />} />
           <Route exact path="/login" element={<Login />} />
