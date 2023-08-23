@@ -1,6 +1,24 @@
 import React from 'react'
+import {useEffect, useState} from 'react';
 
 const LoginForm = ({title, type}) => {
+    const[organisation, setOrganisation] = useState([])
+    let apiUrl = "http://localhost:1337/api/organisations?populate=*"
+  
+    useEffect(()=>{
+        async function getData(){
+            try {
+                const responseData = await fetch(apiUrl)
+                if (responseData){
+                    const jsonData = await responseData.json()
+                    setOrganisation(jsonData)
+                }  
+                
+            } catch (error) {
+                
+            }
+        }
+    },[])
     const handleLogin = () => {
         console.log("click")
     }

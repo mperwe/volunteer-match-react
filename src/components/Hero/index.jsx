@@ -7,7 +7,7 @@ const Hero = () => {
             <div className="container">
                 <div>
                     <h1>Volunteer Link.</h1>
-                    <p>Volunteering made Simple, Change made possible.</p>
+                    <h3>Volunteering made Simple, Change made possible.</h3>
                     <p>Our platform serves as a digital meeting place, connecting enthusiastic volunteers with various non-profit organizations and community initiatives.
                     </p>
                     <a href="/register/organization" className="btn">Get Started</a>
